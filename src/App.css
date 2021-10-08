@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(220, 29%, 92%);
+  flex-direction: column;
+  align-items: center;
+}
+.App {
+  text-align: center;
+  margin-left: auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 100%;
+  }
+  .root {
+    width: inherit;
+  }
+  .as {
+    display: flex;
+    width: inherit;
+  }
+  .btn {
+    width: 25px;
+    font-size: 14px;
+  }
+  .span {
+    width: 130px;
+  }
+  .toolbar {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-flow: column;
+  }
+  .shadow {
+    min-height: 400px;
+    width: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+  .as {
+    width: 700px;
+  }
+  .span {
+    width: 400px;
+  }
+}
